@@ -1,22 +1,12 @@
 import React from 'react';
 function App() {
-    let name = "Gazala";
-    const date = new Date().toLocaleDateString()
-    const time = new Date().toLocaleTimeString()
-
-    const heading = {
-        color:'red',
-        textAlign : 'center',
-        textTransform: 'capitalize',
-        fontWeight: 'bold'
-    }
+    let name = "Gazala"
   return (
-    <>
-      <h1> Welcome React </h1>
-      <h2 style = {heading}> My name is {name}</h2>
-      <h3> Date :{date}</h3>
-      <h3> Time : {time}</h3>
-    </>
+    <div className="App">
+      <h1> Welcome React {name}</h1>
+
+      <h2> Hi</h2>
+    </div>
   );
 }
 
