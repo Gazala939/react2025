@@ -3,6 +3,15 @@ function App() {
     let name = "Gazala";
     const date = new Date().toLocaleDateString()
     const time = new Date().toLocaleTimeString()
+    const hour = new Date().getHours()
+    let greeting = " "
+    if(hour >=1 && hour<12){
+        greeting = 'Good morning'
+    }else if (hour >=12 && hour <19){
+        greeting = 'Good Afternoon'
+    }else{
+        greeting = "Good Night"
+    }
 
     const heading = {
         color:'red',
@@ -12,12 +21,14 @@ function App() {
     }
   return (
     <>
-      <h1> Welcome React </h1>
+      <h1> Welcome  </h1>
       <h2 style = {heading}> My name is {name}</h2>
       <h3> Date :{date}</h3>
       <h3> Time : {time}</h3>
+      <h2> {greeting}!!!</h2>
     </>
   );
 }
 
 export default App;
+
