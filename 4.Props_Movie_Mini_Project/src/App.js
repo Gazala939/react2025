@@ -39,7 +39,8 @@ function App() {
     <h1 className = "title"> Movies App </h1>
     <div className = "cards">
             {movieData.map((obj,index) =>{
-                return<Card key={index}
+                return<Card 
+                    key={index}
                     src={obj.src}
                     name={obj.name}
                     url={obj.url}
