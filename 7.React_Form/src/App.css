@@ -1,0 +1,87 @@
+/* Full screen center */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eef1f5;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;   /* Horizontal center */
+  align-items: center;       /* Vertical center */
+}
+
+/* Form box styling */
+.form-box {
+  background: white;
+  width: 400px;
+  padding: 35px 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  text-align: center;
+  animation: fadeIn 0.6s ease;  /* Smooth enter animation */
+}
+
+/* Title styling */
+.title {
+  margin-bottom: 5px;
+  color: #222;
+}
+
+.subtitle {
+  margin-bottom: 25px;
+  color: #666;
+}
+
+/* Input field styling */
+.input-box {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-box:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 5px rgba(74,144,226,0.5);
+}
+
+/* Buttons */
+.btn-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn {
+  width: 48%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.submit {
+  background: #4CAF50;
+  color: white;
+}
+
+.reset {
+  background: #ff4d4d;
+  color: white;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+

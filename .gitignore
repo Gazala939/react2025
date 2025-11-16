@@ -7,7 +7,6 @@
 /3.Components/package-lock.json
 /3.Components/node_modules
 
-
 /4.Props_Movie_Mini_Project/package-lock.json
 /4.Props_Movie_Mini_Project/node_modules
 
@@ -19,3 +18,6 @@
 
 /7.React_Form/package-lock.json
 /7.React_Form/node_modules
+
+/8.ToDo_List/package-lock.json
+/8.ToDo_List/node_modules
