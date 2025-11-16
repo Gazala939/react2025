@@ -8,6 +8,14 @@ function App() {
     // second parametre: update DataTransfer
     // useState function parameter is default initial value.
     // i.e default initial value indirectly assign to the first parametre
+//  Each time call setState ,React re render the component with the new state.
+
+// Things to rember:
+// useState is only usable inside a React Function component or a custom Hook.
+// Don't call it inside loops,condition or nested function.
+// updates rae asunchronous -they don't happen instatly
+
+
 
     let [counter,setCounter] = useState(0);
 
