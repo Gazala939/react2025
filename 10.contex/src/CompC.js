@@ -1,29 +1,19 @@
 import React from 'react'
 import {FirstName} from './App'
 import {LastName} from './App'
+import { useContext } from 'react'
 
 const CompC = () => {
+    const context1 = useContext(FirstName);
+    const context2 = useContext(LastName);
+
+
+
   return ( 
     <>
-        <FirstName.Consumer>
-            {
-                (fname) => {
-                    return (
-                        <LastName.Consumer>
-                            {
-                                (lname) =>{
-                                    return <div>
-                                        CompC:{fname} {lname}
-                                    </div>
-                                }
-                            }
-                        </LastName.Consumer>
-                    )
-                }
-            }
-
-
-        </FirstName.Consumer>
+     <div>
+        CompC:{context1} {context2}
+    </div>
     </>
   )
 }
